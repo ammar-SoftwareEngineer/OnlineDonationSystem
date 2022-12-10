@@ -1,0 +1,342 @@
+:root {
+    --white-color: #ffffff;
+    --black-color: #000000;
+    --primary-color: #FF7200;
+    --secondary-color: #011749;
+    --third-color: #F7F2ED;
+    --fourth-color: #666666;
+    --main-padding: 100px;
+}
+
+/* ms */
+@media(min-width:576px) {}
+
+/* md */
+@media(min-width:768px) {}
+
+/* lg */
+@media(min-width:992px) {}
+
+/* xl */
+@media(min-width:1200px) {}
+
+/* xxl */
+@media(min-width:1400px) {}
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--secondary-color);
+}
+
+/* start header */
+
+@media(max-width:768px) {
+    .img-sign img {
+        width: 950px;
+        height: 450px;
+
+    }
+}
+
+@media(min-width:992px) {
+    .img-sign img {
+        width: 950px;
+        height: 929px;
+    }
+}
+
+
+header .nav-header .logo img {
+    width: 100px;
+}
+
+header .nav-header .skip h4 {
+    font-size: 1.7rem;
+    color: hsl(222, 97%, 15%, 80%);
+}
+
+@media(max-width:768px) {
+    header .nav-header .logo img {
+        width: 80px;
+    }
+
+    header .nav-header .skip h4 {
+        font-size: 1.3rem;
+    }
+
+
+}
+
+/* end header */
+/* start login */
+.login .header-login h2 {
+    color: var(--secondary-color);
+    line-height: 1.5;
+    font-size: 40px;
+}
+
+.login .header-login p {
+    color: var(--fourth-color);
+    font-size: 18px;
+
+}
+
+.login form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login form .forms label {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--secondary-color);
+}
+
+.login form .forms input {
+    width: 360px;
+    height: 55px;
+    border-radius: 10px;
+}
+
+.login form .forms ::placeholder {
+    font-size: 15px;
+    color: #999999;
+    opacity: 50%;
+}
+
+.login form .forms p {
+    color: var(--fourth-color);
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.login form button {
+    background-color: var(--primary-color) !important;
+    border: none;
+    border-radius: 10px;
+    width: 185px;
+    height: 40px;
+    font-size: 18px;
+}
+
+.login .create-account p {
+    font-size: 14px;
+    color: var(--secondary-color);
+    font-weight: 500;
+}
+
+.login .create-account span {
+    color: var(--primary-color);
+}
+
+.login .or-links p {
+    color: var(--fourth-color);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.login .or-links .buttons-log {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login .or-links .buttons-log button {
+    border-radius: 10px;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 360px;
+}
+
+.login .or-links .buttons-log button a {
+    color: var(--white-color);
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.login .or-links .buttons-log button:nth-child(1) {
+    background-color: #1877F2 !important;
+    color: var(--white-color);
+    font-size: 18px;
+}
+
+.login .or-links .buttons-log button:nth-child(2) {
+    background-color: var(--white-color);
+    color: var(--white-color);
+}
+
+.login .or-links .buttons-log button:nth-child(2) a {
+    color: var(--black-color);
+}
+
+@media(min-width:992px) {
+
+    .login .header-login h2 {
+        color: var(--secondary-color);
+        line-height: 1.5;
+        font-size: 40px;
+    }
+
+    .login .header-login p {
+        color: var(--fourth-color);
+        font-size: 18px;
+
+    }
+
+    .login form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .login form .forms label {
+        font-size: 18px;
+        font-weight: 500;
+        color: var(--secondary-color);
+    }
+
+    .login form .forms input {
+        width: 360px;
+        height: 55px;
+        border-radius: 10px;
+    }
+
+    .login form .forms ::placeholder {
+        font-size: 15px;
+        color: #999999;
+        opacity: 50%;
+    }
+
+    .login form .forms p {
+        color: var(--fourth-color);
+        font-size: 13px;
+        font-weight: 500;
+    }
+
+    .login form button {
+        background-color: var(--primary-color) !important;
+        border: none;
+        border-radius: 10px;
+        width: 185px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+    .login .create-account p {
+        font-size: 14px;
+        color: var(--secondary-color);
+        font-weight: 500;
+    }
+
+    .login .create-account span {
+        color: var(--primary-color);
+        cursor: pointer;
+    }
+
+    .login .or-links p {
+        color: var(--fourth-color);
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .login .or-links .buttons-log {
+        display: flex;
+        flex-direction: column;
+        width: 360px;
+    }
+
+    .login .or-links .buttons-log button {
+        border-radius: 10px;
+        height: 50px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+
+    .login .or-links .buttons-log button a {
+        color: var(--white-color);
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .login .or-links .buttons-log button:nth-child(1) {
+        background-color: #1877F2 !important;
+        color: var(--white-color);
+        font-size: 18px;
+    }
+
+    .login .or-links .buttons-log button:nth-child(2) {
+        background-color: var(--white-color);
+        color: var(--white-color);
+    }
+
+    .login .or-links .buttons-log button:nth-child(2) a {
+        color: var(--black-color);
+
+    }
+}
+
+@media(max-width:768px) {
+    .login .header-login h2 {
+        font-size: 30px;
+    }
+
+    .login .header-login p {
+        font-size: 14px;
+    }
+}
+
+/* end login */
+/* start footer */
+footer {
+    margin-top: 100px;
+}
+
+footer p {
+    font-size: 14px;
+    color: var(--secondary-color);
+    font-weight: 500;
+}
+
+footer span {
+    color: var(--primary-color);
+}
+
+
+/* end footer */
