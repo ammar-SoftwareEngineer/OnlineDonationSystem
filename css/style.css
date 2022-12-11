@@ -24,13 +24,16 @@
 @media(min-width:1400px) {}
 
 * {
+    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
 html {
     scroll-behavior: smooth;
 }
-
+.login-sign{
+    position: relative;
+}
 html,
 body {
     width: 100%;
@@ -39,7 +42,6 @@ body {
     padding: 0;
     overflow-x: hidden;
 }
-
 
 ::-webkit-scrollbar {
     width: 8px;
@@ -58,15 +60,20 @@ body {
 /* start header */
 .login-page {
     width: 100%;
-    position: absolute;
     background-color: white;
-    
+}
+
+.img-sign {
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
 @media(max-width:768px) {
     .img-sign img {
         width: 950px;
         height: 450px;
+
     }
 }
 
@@ -74,10 +81,38 @@ body {
     .img-sign img {
         width: 950px;
         height: 929px;
-        z-index: 1;
     }
 }
 
+.img-sign::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, #F7941E 0%, #004E8F 100%);
+    opacity: 75%;
+}
+
+.img-sign p {
+    position: absolute;
+    top: 40%;
+    color: var(--white-color);
+    font-size: 64px;
+    width: 100%;
+    font-weight: 700;
+}
+
+.img-sign span {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    color: var(--white-color);
+    font-size: 64px;
+    width: 100%;
+    font-weight: 500;
+}
 
 header .nav-header .logo img {
     width: 100px;
@@ -102,7 +137,6 @@ header .nav-header .skip h4 {
 
 /* end header */
 /* start login */
-
 .login .header-login h2 {
     color: var(--secondary-color);
     line-height: 1.5;
@@ -350,6 +384,9 @@ footer span {
 .signup-page {
     background-color: white;
     width: 100%;
+    z-index: 1;
+    position: absolute;
+    top: 0;
 }
 
 .signup .header-signup h2 {
